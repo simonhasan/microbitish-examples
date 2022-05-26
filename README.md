@@ -29,7 +29,7 @@ This repository will contain examples of MicroPython code for various BBC micro:
 > - BBC micro:bit
 >   - Built-in
 >     - Display
->       - Displaying Strings
+>       - [Displaying Strings](https://github.com/simonhasan/microbitish-examples/tree/main/examples/microbit/built-in/display/displaying-strings#displaying-strings-bbc-microbit)
 > - Adafruit CLUE
 >   - Built-in
 >     - Display
