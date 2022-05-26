@@ -376,17 +376,3 @@ This breakout board can be purchased through [Tindie](https://www.tindie.com/pro
 
 ---
 
-## <a name="examples"></a>Examples
-### <a name="built-in"></a>[Part 0: Built-in](examples/00-built-in/)
-#### <a name="display"></a>Section 0.0: Display
-#### <a name="buttons"></a>Section 0.1: Buttons
-#### <a name="display"></a>Section 0.2: Display
-#### <a name="buzzer"></a>Section 0.3: Buzzer
-#### <a name="sound"></a>Section 0.4: Sound Sensor
-#### <a name="accel"></a>Section 0.5: Accelerometer
-#### <a name="magnet"></a>Section 0.6: Magnetometer
-#### <a name="temp"></a>Section 0.7: Temperature Sensor
-#### <a name="light"></a>Section 0.8: Light Sensor
-#### <a name="radio"></a>Section 0.9: Radio
-
-#### <a name="pins"></a>[Section 0.10: Pins](examples/00-built-in/0.10-pins/)
