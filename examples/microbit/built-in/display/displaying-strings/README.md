@@ -63,8 +63,6 @@ text = 'Python'
 display.scroll(text, delay=100)
 ```
 
-The code above changes the increments of the scrolling speed from the default `400` to `100`, resulting in a faster scrolling speed from right to left. This is demonstrated below:
-
 ![display-string-delay-microbit1](images/display-string-delay-microbit1.gif)
 
 ---
