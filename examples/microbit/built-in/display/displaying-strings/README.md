@@ -4,7 +4,7 @@ The BBC micro:bit display is a 5×5 matrix of red LEDs. Strings are displayed by
 
 ---
 
-###  Displaying Strings (Simplest)
+##  Displaying Strings (Simplest)
 
 ---
 
@@ -44,11 +44,11 @@ display.show(text)
 
 ---
 
-### Displaying Strings (Additional Methods)
+## Displaying Strings (Additional Methods)
 
 ---
 
-#### Displaying a String with a Delay 
+### Displaying a String with a Delay 
 
 > ### `display.scroll(string, delay=ms)`
 >
@@ -84,7 +84,7 @@ display.show(text, delay=100)
 
 ---
 
-#### Displaying a String with a Loop
+### Displaying a String with a Loop
 
 > ### `display.scroll(string, loop=bool)`
 >
@@ -120,7 +120,7 @@ display.scroll(text, loop=True)
 
 ---
 
-#### Clearing the Display
+### Clearing the Display
 
 > ### `display.scroll(string, clear=bool)`
 >
