@@ -1,16 +1,16 @@
-# Displaying a String (BBC micro:bit)
+# Displaying Strings (BBC micro:bit)
 
 The BBC micro:bit display is a 5×5 matrix of red LEDs. Strings are displayed by either scrolling the characters of the string from right to left or displaying each character individually. In order to display strings the `microbit` module must be imported.
 
 ---
 
-###  <a name="disp-str-microbit0"></a>0.0.0.0.0: Displaying a String
+###  Displaying Strings (Simplest)
 
 ---
 
 > ### `display.scroll(string)`
 >
-> Display a string from right to left.
+> Display a string scrolling from right to left.
 
 ```python
 # display-string-microbit1.py
@@ -23,9 +23,11 @@ display.scroll(text)
 
 ![display-string-microbit1](images/display-string-microbit1.gif)
 
-To display each character of the string individually use:
+---
 
 > ### `display.show(string)`
+>
+> Display a string by displaying one character at a time.
 
 ```python
 # display-string-microbit2.py
@@ -36,23 +38,21 @@ text = 'Python'
 display.show(text)
 ```
 
-The method presented above displays each character of the string `Python` individually as demonstrated below:
-
 ![display-string-microbit1](images/display-string-microbit2.gif)
 
 > **NOTE**: The `display.show()` method does not clear the screen by default, leaving the final character on the display.
 
 ---
 
-### <a name="disp-str-add-microbit0"></a>0.0.0.0.1: Displaying a String (Optional Methods)
+### Displaying Strings (Additional Methods)
 
 ---
 
-#### <a name="disp-str-add-microbit1"></a>0.0.0.0.0.0: Displaying a String with a Delay 
-
-It is possible to change the speed of the string is scrolling in milliseconds with the `delay=ms` argument. This argument changes the speed of the increments from right to left. The default value is `delay=400` milliseconds.
+#### Displaying a String with a Delay 
 
 > ### `display.scroll(string, delay=ms)`
+>
+> Display a string scrolling from right to left with a delay in milliseconds between each increments. The default is `delay=400`.
 
 ```python
 # display-string-delay-microbit1.py
@@ -67,9 +67,11 @@ The code above changes the increments of the scrolling speed from the default `4
 
 ![display-string-delay-microbit1](images/display-string-delay-microbit1.gif)
 
-There is a `delay` argument for `display.show()` that
+---
 
 > ### `display.show(string, delay=ms)`
+>
+> Display a string by displaying one character at a time with a delay in milliseconds between characters. The default is `delay=400`.
 
 ```python
 # display-string-delay-microbit2.py
@@ -82,17 +84,13 @@ display.show(text, delay=100)
 
 ![display-string-delay-microbit2](images/display-string-delay-microbit2.gif)
 
-**WORD THIS BETTER!**
-
 ---
 
-#### <a name="disp-str-add-microbit2"></a>0.0.0.0.0.1: Displaying a String with a Loop
-
-Both the `display.scroll()` and `display.show()` methods only run once without a `while` loop. It is possible to loop the strings without an explicit `while` loop using the `loop=bool` argument. The default value is `loop=False`.
+#### Displaying a String with a Loop
 
 > ### `display.scroll(string, loop=bool)`
-
-**TODO**
+>
+> Display a string scrolling from right to left with a loop. The default is `loop=False`.
 
 ```python
 # display-string-loop-microbit1.py
@@ -105,9 +103,11 @@ display.scroll(text, loop=True)
 
 ![display-string-loop-microbit1](images/display-string-loop-microbit1.gif)
 
-**TODO**
+---
 
 > ### `display.show(string, loop=bool)`
+>
+> Display a string by displaying one character in a loop. The default is `loop=False`.
 
 ```python
 # display-string-loop-microbit1.py
@@ -122,13 +122,11 @@ display.scroll(text, loop=True)
 
 ---
 
-#### <a name="disp-str-add-microbit3"></a>0.0.0.0.0.2: Clearing the Display
-
-**TODO**
+#### Clearing the Display
 
 > ### `display.scroll(string, clear=bool)`
-
-**TODO** `display.show(text, clear=True)`
+>
+> This is in the API, but does not work as it raises a `TypeError`.
 
 ```python
 # This will return a TypeError
@@ -139,7 +137,7 @@ text = 'Python'
 display.show(text, clear=True)
 ```
 
-**TODO**
+**OUTPUT:**
 
 ```
 Traceback (most recent call last):
@@ -147,11 +145,11 @@ Traceback (most recent call last):
 TypeError: extra keyword arguments given
 ```
 
-**TODO**
+---
 
 > ### `display.show(string, clear=bool)`
-
-**TODO**
+>
+> Display a string by displaying one character clearing the display upon completion. The default is `clear=False`.
 
 ```python
 # display-string-clear-microbit.py
@@ -162,5 +160,5 @@ text = 'Python'
 display.show(text, clear=True)
 ```
 
-![display-string-clear-microbit](C:/Users/sjema/OneDrive/Documents/GitHub/microbitish-examples/examples/00-built-in/0.00-display/images/display-string-clear-microbit.gif)
+![display-string-clear-microbit](images/display-string-clear-microbit.gif)
 
